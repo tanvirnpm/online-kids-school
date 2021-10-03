@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project live [Kids School](https://stupefied-galileo-f3e1fc.netlify.app/).
+This project live [Kids School](https://relaxed-babbage-19123f.netlify.app/).
 
 ## Main Features Of This Project
 1. This website for prekintergarden kids.
