@@ -1,10 +1,8 @@
 # Getting Started with Create React App
 
-This project live [Kids School](https://github.com/facebook/create-react-app).
+This project live [Kids School](https://stupefied-galileo-f3e1fc.netlify.app/).
 
-## Available Scripts
-
-Main Features Of This Project
+## Main Features Of This Project
 1. This website for prekintergarden kids.
 2. Here children learn how to read and write.
 3. They can learn how to drow.
