@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Let's play with my kids learning website(Morning Fresh Glory School).
 
-This project live [Kids School](https://relaxed-babbage-19123f.netlify.app/).
+This project live [Morning Fresh Glory School](https://relaxed-babbage-19123f.netlify.app/).
 
 ## Main Features Of This Project
 1. This website for prekintergarden kids.
