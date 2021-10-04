@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CoursesContext } from '../../App';
+import Features from '../Features/Features';
 import HeroBanner from '../HeroBanner/HeroBanner';
 import Service from '../Services/Service/Service';
 
@@ -9,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <HeroBanner/>
-            <div className="container">
+            <div className="container my-5">
                 <h1 className="text-center">Our Services</h1>
                 <div className="container my-4">
                     <div className="row gy-4">
@@ -22,6 +23,7 @@ const Home = () => {
                     <Link className="btn btn-lg btn-outline-primary mx-auto" to="/services">More Services</Link>
                 </div>
             </div>
+            <Features/>
         </div>
     );
 };

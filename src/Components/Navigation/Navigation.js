@@ -15,6 +15,9 @@ const Navigation = () => {
                         <Link className="nav-link" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" to="/features">Features</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link" to="/services">Services</Link>
                     </li>
                     <li className="nav-item">

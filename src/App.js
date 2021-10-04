@@ -13,6 +13,7 @@ import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Services from './Components/Services/Services';
 import { createContext, useEffect, useState } from 'react';
+import Features from './Components/Features/Features';
 export const CoursesContext = createContext([]);
 function App() {
   const [courses, setCourses] = useState([]);
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services />
+            </Route>
+            <Route path="/features">
+              <Features />
             </Route>
             <Route path="/about">
               <About />
