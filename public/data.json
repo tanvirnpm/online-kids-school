@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Alphabet flashcards",
+      "price": 3000,
+      "coverImage": "https://www.totcards.com/img/alphabet-flashcards-2x.png"
+    },
+    {
+      "id": 2,
+      "name": "Number flashcards",
+      "price": 4000,
+      "coverImage": "https://www.totcards.com/img/number-flashcards-2x.png"
+    },
+    {
+      "id": 3,
+      "name": "Shape flashcards",
+      "price": 2000,
+      "coverImage": "https://www.totcards.com/img/shape-flashcards-2x.png"
+    },
+    {
+      "id": 4,
+      "name": "Colour flashcards",
+      "price": 5000,
+      "coverImage": "https://www.totcards.com/img/colour-flashcards-2x.png"
+    },
+    {
+      "id": 5,
+      "name": "Time flashcards",
+      "price": 6000,
+      "coverImage": "https://www.totcards.com/img/time-flashcards-2x.png"
+    },
+    {
+      "id": 6,
+      "name": "Months & seasons flashcards",
+      "price": 3000,
+      "coverImage": "https://www.totcards.com/img/months-seasons-flashcards-2x.png"
+    },
+    {
+      "id": 7,
+      "name": "UK money flashcards",
+      "price": 3500,
+      "coverImage": "https://www.totcards.com/img/uk-money-flashcards-2x.png"
+    },
+    {
+      "id": 8,
+      "name": "US money flashcards",
+      "price": 4500,
+      "coverImage": "https://www.totcards.com/img/us-money-flashcards-2x.png"
+    },
+    {
+      "id": 9,
+      "name": "Arabic alphabet flashcards",
+      "price": 5500,
+      "coverImage": "https://www.totcards.com/img/arabic-alphabet-flashcards-2x.png"
+    },
+    {
+      "id": 10,
+      "name": "Times Table flashcards",
+      "price": 3300,
+      "coverImage": "https://www.totcards.com/img/time-flashcards-2x.png"
+    },
+    {
+      "id": 11,
+      "name": "Days of the week flashcards",
+      "price": 1300,
+      "coverImage": "https://www.totcards.com/img/days/days-of-week-flashcards-2x.png"
+    },
+    {
+      "id": 12,
+      "name": "Months & seasons flashcards",
+      "price": 4100,
+      "coverImage": "https://www.totcards.com/img/months-seasons-flashcards-2x.png"
+    }
+  ]

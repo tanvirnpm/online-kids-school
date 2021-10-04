@@ -1,15 +1,15 @@
 import React from 'react';
-import serviceImg from '../../../Images/service-1.png'
 
-const Service = () => {
+const Service = (props) => {
+    // console.log(props.course)
+    const {name, price, coverImage} = props.course;
     return (
-        <div class="card">
-            <img src={serviceImg} class="card-img-top" alt="" />
-            <div class="card-body">
-                <h5 class="card-title">Alphabet flashcards</h5>
-                <h6 className="card-subtitle">Price: 1200 taka</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary float-end">Enrol Course</a>
+        <div className="card">
+            <img src={coverImage} className="card-img-top" alt="" />
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <h6 className="card-subtitle">Price: {price} taka</h6>
+                <a href="#" className="btn btn-sm btn-primary float-end">Enrol Course</a>
             </div>
         </div>
     );

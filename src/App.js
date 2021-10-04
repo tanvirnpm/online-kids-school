@@ -12,32 +12,42 @@ import About from './Components/About/About';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Services from './Components/Services/Services';
-
+import { createContext, useEffect, useState } from 'react';
+export const CoursesContext = createContext([]);
 function App() {
-  return (
-    <Router>
-      <div>
-        <Header/>
+  const [courses, setCourses] = useState([]);
+  useEffect(()=> {
+    fetch('./data.json')
+    .then(res => res.json())
+    .then(data => setCourses(data))
+  },[])
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer/>
-      </div>
-    </Router>
+  return (
+    // <CoursesContext value={courses}>
+      <Router>
+        <CoursesContext.Provider value={courses}>
+          <Header/>
+
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer/>
+        </CoursesContext.Provider>
+      </Router>
+    // {/* </CoursesContext> */}
   );
 }
 

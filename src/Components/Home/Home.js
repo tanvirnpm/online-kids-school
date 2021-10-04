@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CoursesContext } from '../../App';
 import HeroBanner from '../HeroBanner/HeroBanner';
 import Service from '../Services/Service/Service';
 
 const Home = () => {
+    const course = useContext(CoursesContext);
     return (
         <div>
             <HeroBanner/>
@@ -11,18 +13,9 @@ const Home = () => {
                 <h1 className="text-center">Our Services</h1>
                 <div className="container my-4">
                     <div className="row gy-4">
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <Service/>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <Service/>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <Service/>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <Service/>
-                        </div>
+                        {
+                            course.slice(0,4).map(course => <div key={course.id} className="col-lg-3 col-md-6 col-12"><Service course={course}/></div>)
+                        }
                     </div>
                 </div>
                 <div className="d-flex mb-4">
